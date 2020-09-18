@@ -6,6 +6,9 @@ body{
 	background-color:#F7F8F9;
 	margin:0;
 }
+ul{
+	list-style-type: none;
+}
 .page900{
 	width:900px;
 	margin:0 auto;
@@ -18,29 +21,64 @@ body{
 
 /* header */
 #header{
-	background-color:red;
+	background-color:#fff;
+	height:60px;
 }
 #logo{
-	width:250px;
-	background-color:rosybrown ;
+	width:300px;
+	 /* background-color:red ; */
 	float:left;
+	
+}
+#logo img{
+	height:60px;
+	display: block; 
+	/* display:设置元素的显示类型
+	 属性值：
+	- block  把元素设置为块元素
+	  特点：独占一行，可以设置宽度和高度
+	- inline 把元素设置为行内元素
+		特点：不独占一行 不可以设置宽度和高度
+	- inline-block  把元素设置行内块元素
+	  - <img /> 属于行内块
+	 
+	*/
+	
 }
 #nav{
-	width:500px;
-	background-color:green;
+	width:450px;
+	height:60px;
+	/* background-color:green; */
 	float:left;
 	overflow:hidden;
 }
 #nav li{
-	width:100px;
+	width:90px;
 	float:left;
+	/* background-color: #FFD700; */
+	text-align: center;/* 设置文字水平居中*/
+}
+#nav li a{
+	/* background-color: pink; */
+	height:60px;
+	line-height:60px; /* 设置文字垂直居中*/
+	display: block;
+	margin:0 1px 0 0;
+	text-decoration: none;/* 取消文本下划线*/
+	color:#333;
 }
 #search{
 	width:150px;
-	background-color:blue;
+	height:30px;
+	padding:15px 0;
+	/* background-color:blue; */
 	float:left;
+	
 }
-
+#search input{
+	height:30px;
+	border:1px solid #ccc;
+}
 #banner{
 	height:300px;
 	background-color:gold;
@@ -85,4 +123,45 @@ body{
 /* Footer */
 #footer{
 	background-color:#333;
+}
+.sitemap{
+	background-color:gold;
+	overflow:hidden;
+}
+.copyright{
+	background-color:greenyellow;
+}
+.contact{
+	background-color: #F7F8F9;
+	width:250px;
+	float:left;
+}
+.footer_menu{
+	background-color: #FFC0CB;
+	width:650px;
+	float:left;
+	
+}
+.share ul{
+	background-color:red;
+	overflow:hidden;
+}
+.share ul li{
+	width:216px;
+	background-color:yellow;
+	float:left;
+}
+.share ul li img{
+	width:50px;
+	height:50px;
+	color:pink;
+}
+
+.fmenu{
+	overflow:hidden;
+}
+
+.fmenu-item{
+	width:130px;
+	float:left;
 }
